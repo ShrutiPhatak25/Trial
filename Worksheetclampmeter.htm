@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Clampmeter</TITLE>
+<script>
+	function calFun(cVal, value, loc){
+		var tot = value - cVal   ;
+		document.getElementById(loc).value = (tot <= -10)? '-' : tot.toFixed(2);
+	}
+
+</script>
+
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2900.2912" name=GENERATOR></HEAD>
+<BODY bgColor=pink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--
+MR NO:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+WORKSHEET NO:<br>&nbsp&nbsp&nbsp&nbsp&nbsp
+LOCATION:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+SR NO:<br>&nbsp&nbsp&nbsp&nbsp&nbsp
+INSTRUMENT:MULTIMETER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+MAKE: FLUKE111<br>&nbsp&nbsp&nbsp
+TYPE:DIGITAL&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+RANGE:--> 
+<CENTER>
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD>
+	<tr><td><center>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MR NO: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"size="8">
+      Data Sheet 'A' </CENTER></TD></TR>
+	    <TR>
+    <TD>
+      <CENTER>Current Ranges</CENTER></TD></TR></TBODY></TABLE>
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>Range</CENTER></TD>
+    <TD>
+      <CENTER>AC A</CENTER></TD>
+    <TD>
+      <CENTER>Reading<BR>on std</CENTER></TD>
+    <TD>
+      <CENTER>Error</CENTER></TD>
+    <TD>
+      <CENTER>Accuracy Claimed<BR>+or-(%rdg+dgt),% of FSD</CENTER></TD>
+    <TD>
+      <CENTER>DC A</CENTER></TD>
+    <TD>
+      <CENTER>Error</CENTER></TD>
+    <TD>
+      <CENTER>Accuracy Claimed<BR>+or-(%rdg+dgt),% of FSD</CENTER></TD></TR>
+  <TR>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4" onchange="calFun(this.value, document.getElementById('hv2').value,'h1');" id="hv1"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv1').value,this.value,'h1');" id="hv2"></center></td>
+	<td><center><input type="text"size="4" id="h1"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4" onchange="calFun(this.value, document.getElementById('hv2').value,'dc1');"></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc1"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TR>
+	
+	
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4" onchange="calFun(this.value, document.getElementById('hv12').value,'h11');" id="hv11"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv11').value,this.value,'h11');" id="hv12"></center></td>
+	<td><center><input type="text"size="4" id="h11"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv12').value,'dc2');"></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc2"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+  <TR>
+    
+	<TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv4').value,'h3');" id="hv3"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv3').value,this.value,'h3');" id="hv4"></center></td>
+	<td><center><input type="text"size="4" id="h3"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4" onchange="calFun(this.value, document.getElementById('hv4').value,'dc3');"></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc3"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+  <TR>
+  
+  
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <<td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv24').value,'h22');" id="hv22"></center></td>
+	<td><center><input type="text"size="4"   onchange="calFun(document.getElementById('hv22').value,this.value,'h22');" id="hv24"></center></td>
+	<td><center><input type="text"size="4"   id="h22"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4" onchange="calFun(this.value, document.getElementById('hv24').value,'dc4');"></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc4"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+  <TR>
+  
+  
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv6').value,'h5');" id="hv5"></center></td>
+	<td><center><input type="text"size="4"  onchange="calFun(document.getElementById('hv5').value,this.value,'h5');" id="hv6"></center></td>
+	<td><center><input type="text"size="4"  id="h5"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4" onchange="calFun(this.value, document.getElementById('hv6').value,'dc5');"></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc5"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+  <TR>
+  
+  <TR>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv36').value,'h35');" id="hv35"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv35').value,this.value,'h35');" id="hv36"></center></td>
+	<td><center><input type="text"size="4" id="h35"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4" onchange="calFun(this.value, document.getElementById('hv36').value,'dc35');"></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc35"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+  <TR>
+  
+  <TR>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv8').value,'h7');" id="hv7"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv7').value,this.value,'h7');" id="hv8"></center></td>
+	<td><center><input type="text"size="4" id="h7"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv8').value,'dc7');" ></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc7"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+  <TR>
+  
+  
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv48').value,'h47');" id="hv47"></center></td>
+    <td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv47').value,this.value,'h47');" id="hv48"></center></td>
+    <td><center><input type="text"size="4" id="h47"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv48').value,'dc47');" ></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc47"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD></TBODY></TABLE>
+	  
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>Resistance Ranges</CENTER></TD></TR></TBODY></TABLE>
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>Range</CENTER></TD>
+    <TD>
+      <CENTER>Standard Reading</CENTER></TD>
+    <TD>
+      <CENTER>Observed Reading</CENTER></TD>
+    <TD>
+      <CENTER>Error</CENTER></TD>
+    <TD>
+      <CENTER>Accuracy Claimed <BR>+or-(%rdg+dgt), %of FSD</CENTER></TD>
+    
+	<TR>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv57').value,'h57');" id="hv57"></center></td>
+    <td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv57').value,this.value,'h57');" id="hv58"></center></td>
+	<td><center><input type="text"size="4" id="h57"></center></td>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+  <TR>
+  
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+     <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv67').value,'h67');" id="hv67"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv67').value,this.value,'h67');" id="hv68"></center></td>
+	<td><center><input type="text"size="4" id="h67"></center></td>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+  <TR>
+            
+     <TABLE width="100%" border=2>
+  <TBODY>
+  <TR>
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+  <TD>
+      <CENTER>Voltage Ranges</CENTER></TD></TR></TBODY></TABLE>
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>Range</CENTER></TD>
+    <TD>
+      <CENTER>AC V</CENTER></TD>
+    <TD>
+      <CENTER>Reading<BR>on std</CENTER></TD>
+    <TD>
+      <CENTER>Error</CENTER></TD>
+    <TD>
+      <CENTER>Accuracy Claimed<BR>+or-(%rdg+dgt),% of FSD</CENTER></TD>
+    <TD>
+      <CENTER>DC V</CENTER></TD>
+    <TD>
+      <CENTER>Error</CENTER></TD>
+    <TD>
+      <CENTER>Accuracy Claimed<BR>+or-(%rdg+dgt),% of FSD</CENTER></TD></TR>
+  <TR>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv77').value,'h77');" id="hv77"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv77').value,this.value,'h77');" id="hv78"></center></td>
+	<td><center><input type="text"size="4" id="h77"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv78').value,'dc77');" ></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc77"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TR>
+    
+	<TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv87').value,'h87');" id="hv87"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv87').value,this.value,'h87');" id="hv88"></center></td>
+	<td><center><input type="text"size="4" id="h87"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv88').value,'dc87');" ></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc87"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>     
+    <TR>
+   
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv97').value,'h97');" id="hv97"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv97').value,this.value,'h97');" id="hv98"></center></td>
+	<td><center><input type="text"size="4" id="h97"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+    <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv98').value,'dc97');" ></CENTER></TD>
+    <TD><CENTER><INPUT size="4" id="dc97"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+<TR>
+   
+   <TD><CENTER><INPUT size=4></CENTER></TD>
+   <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv117').value,'h117');" id="hv117"></center></td>
+   <td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv117').value,this.value,'h117');" id="hv118"></center></td>
+   <td><center><input type="text"size="4" id="h117"></center></td>
+   <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+   <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv118').value,'dc117');" ></CENTER></TD>
+   <TD><CENTER><INPUT size="4" id="dc117"></CENTER></TD>
+   <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+<TR>
+
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv227').value,'h227');" id="hv227"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv227').value,this.value,'h227');" id="hv228"></center></td>
+	<td><center><input type="text"size="4" id="h227"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+   <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv228').value,'dc227');" ></CENTER></TD>
+   <TD><CENTER><INPUT size="4" id="dc227"></CENTER></TD>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+<TR>
+
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+    <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv337').value,'h337');" id="hv337"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv337').value,this.value,'h337');" id="hv338"></center></td>
+	<td><center><input type="text"size="4" id="h337"></center></td>
+    <TD><CENTER>2.0%+2 dgt</CENTER></TD>
+   <TD><CENTER><INPUT size="4"  onchange="calFun(this.value, document.getElementById('hv337').value,'dc337');" ></CENTER></TD>
+   <TD><CENTER><INPUT size="4" id="dc337"></CENTER></TD>
+    <TD>
+         <CENTER>2.0%+2 dgt</CENTER></TD>	  
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>Frequency Ranges</CENTER></TD></TR></TBODY></TABLE>
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>Range</CENTER></TD>
+    <TD>
+      <CENTER>Standard Reading</CENTER></TD>
+    <TD>
+      <CENTER>Observed Reading</CENTER></TD>
+    <TD>
+      <CENTER>Error</CENTER></TD>
+    <TD>
+      <CENTER>Accuracy Claimed <BR>+or-(%rdg+dgt)</CENTER></TD>
+     <TR>
+   
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+	<td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv447').value,'h447');" id="hv447"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv447').value,this.value,'h447');" id="hv448"></center></td>
+	<td><center><input type="text"size="4" id="h447"></center></td>    
+	<TD><CENTER><INPUT size=4></CENTER></TD>
+  <TR>
+  
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+   <td><center><input type="text"size="4"  onchange="calFun(this.value, document.getElementById('hv557').value,'h557');" id="hv557"></center></td>
+	<td><center><input type="text"size="4" onchange="calFun(document.getElementById('hv557').value,this.value,'h557');" id="hv558"></center></td>
+	<td><center><input type="text"size="4" id="h557"></center></td>
+    <TD><CENTER><INPUT size=4></CENTER></TD>
+  <TR>
+            
+     <TABLE width="100%" border=2>
+  <TBODY>
+  <TR>
+<TABLE width="100%" border=1>
+  <TBODY>
+  <TR>
+  <TD>
+</CENTER></BODY></HTML>
